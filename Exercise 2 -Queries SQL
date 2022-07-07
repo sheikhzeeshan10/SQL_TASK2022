@@ -1,0 +1,174 @@
+
+
+
+/*  Query 1  */
+
+SELECT artists.Name as "Artist Name", 
+	albums.Title as "Album Name"
+	FROM albums
+	JOIN artists 
+	ON artists.ArtistId = albums.ArtistId
+	ORDER by artists.Name;
+
+ 
+/*  Query 2  */
+
+SELECT artists.Name as "Artist Name", albums.Title as "Album Name", 
+	count(albums.ArtistId) as "No of Albums"
+	FROM albums
+	JOIN artists 
+	ON artists.ArtistId = albums.ArtistId
+	GROUP by albums.ArtistId
+	HAVING count(albums.ArtistId) >= 1
+	ORDER by albums.Title DESC;
+
+
+/*  Query 3  */
+
+SELECT Name as "Artist Name"
+	FROM artists 
+	WHERE ArtistId NOT in 
+	(SELECT albums.ArtistId FROM albums);
+
+
+/*  Query 4  */
+
+SELECT artists.Name as "Artist Name", 
+	count(albums.ArtistId) as "No of albums"
+	FROM albums
+	JOIN artists
+	ON albums.ArtistId = artists.ArtistId
+	GROUP by artists.name
+	ORDER by count(albums.ArtistId) DESC, artists.Name ASC;
+
+
+/*  Query 5  */
+
+SELECT artists.Name as "Artist Name", 
+	count(albums.ArtistId) as "No of albums"
+	FROM albums
+	JOIN artists
+	ON albums.ArtistId = artists.ArtistId
+	GROUP by artists.name
+	HAVING count(albums.ArtistId) >= 10
+	ORDER by count(albums.ArtistId) DESC, artists.Name ASC;
+
+/*  Query 6  */
+
+SELECT artists.Name as "Artist Name", 
+	count(albums.ArtistId) as "No of albums"
+	FROM albums
+	JOIN artists
+	ON albums.ArtistId = artists.ArtistId
+	GROUP by artists.name
+	ORDER by count(albums.ArtistId) DESC limit 3;
+
+
+/*  Query 7  */
+
+SELECT albums.Title as "Album Title", 
+	tracks.Name as "Track" FROM tracks
+	JOIN albums 
+	ON albums.AlbumId = tracks.AlbumId
+	WHERE albums.ArtistId = 59
+	ORDER BY TrackID;
+
+/*  Query 8  */ #####################
+
+SELECT employees.LastName ||" "|| employees.FirstName as "Employee Name", 
+	employees.EmployeeId as "Employee ID", 
+	employees.Title as "Employee Title", 
+	employees.ReportsTo as "Manager ID", 
+	alt.FirstName ||" "|| alt.LastName as "Manager Name" , 
+	alt.Title as "Manager Name"
+	FROM employees 
+	INNER JOIN employees as alt 
+	on alt.EmployeeId = employees.ReportsTo;
+	
+
+
+/*  Query 9  */
+ 
+		/* top_employee view   */ 
+DROP VIEW if EXISTS TOP_EMPLOYEES;
+	CREATE VIEW TOP_EMPLOYEES as 
+
+		SELECT employees.EmployeeId as "emp_id", 
+			employees.LastName ||" "|| employees.FirstName as "emp_name", 
+			count(customers.CustomerId) as "cust_count"
+			FROM customers
+			JOIN employees ON employees.EmployeeId = customers.SupportRepId
+			GROUP by employees.EmployeeId
+
+		/*   */ 
+		
+	
+
+/* Question 10 */
+
+INSERT into media_types (name) VALUES ("MP3");
+
+
+CREATE TRIGGER media_input_check
+    BEFORE INSERT ON media_types
+    BEGIN
+        SELECT CASE
+            WHEN NEW.Name = "MP3" THEN 
+				RAISE (ABORT, "Dublicate entries not allowed!")
+        END;
+END;
+
+DROP TRIGGER media_input_check
+	
+
+/*  Query 11 */
+   /* Creating table */
+CREATE TABLE tracks_audit_log 
+( operation TEXT,
+  datetime TEXT,
+  username TEXT,
+  old_value TEXT,
+  new_value TEXT
+);
+
+  /* Creating trigger which keeps track of data manipulations in table track -> Name*/
+	
+CREATE TRIGGER tracks_audit_insert
+AFTER INSERT ON tracks
+	BEGIN
+		INSERT INTO tracks_audit_log (operation, datetime, username, new_value)
+		VALUES ("INSERT",datetime(),"Admin",NEW.name);
+	END;
+    
+	
+##TEST ###
+
+INSERT INTO tracks (name, Composer,MediaTypeId, Milliseconds, Bytes, UnitPrice)
+VALUES ("test", "Zee",2, 2222, 211, 0.12)
+
+	
+
+CREATE TRIGGER tracks_audit_update
+AFTER UPDATE ON tracks
+	BEGIN
+		INSERT INTO tracks_audit_log (operation, datetime, username, old_value, new_value)
+		VALUES ("UPDATE",datetime(),"Admin",OLD.name,NEW.name);
+	END;
+	
+##TEST ##
+
+UPDATE tracks SET name = "name_changed" WHERE name = "test"
+
+
+
+CREATE TRIGGER tracks_audit_delete
+AFTER DELETE ON tracks
+	BEGIN
+		INSERT INTO tracks_audit_log (operation, datetime, username, old_value)
+		VALUES ("DELETE",datetime(),"Admin",OLD.name);
+	END;
+
+##TEST ##
+
+------------------------------------
+

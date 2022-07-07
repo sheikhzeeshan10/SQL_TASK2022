@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/administrator/Documents/Home Task/chinook.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure pragmas browser query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3928"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,16:maintracks_audit_log"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="TOP_EMPLOYEES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="56"/><column index="3" value="83"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="albums" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="65"/><column index="2" value="300"/><column index="3" value="60"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="artists" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="60"/><column index="2" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="customers" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="0"/></sort><column_widths><column index="1" value="89"/><column index="2" value="80"/><column index="3" value="95"/><column index="4" value="300"/><column index="5" value="299"/><column index="6" value="146"/><column index="7" value="49"/><column index="8" value="112"/><column index="9" value="87"/><column index="10" value="148"/><column index="11" value="141"/><column index="12" value="127"/><column index="13" value="105"/></column_widths><filter_values><column index="13" value="5"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="employees" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="5" mode="0"/></sort><column_widths><column index="1" value="90"/><column index="2" value="77"/><column index="3" value="80"/><column index="4" value="140"/><column index="5" value="94"/><column index="6" value="145"/><column index="7" value="145"/><column index="8" value="204"/><column index="9" value="77"/><column index="10" value="44"/><column index="11" value="64"/><column index="12" value="87"/><column index="13" value="132"/><column index="14" value="132"/><column index="15" value="192"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="genres" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="63"/><column index="2" value="129"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="invoice_items" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="102"/><column index="2" value="71"/><column index="3" value="58"/><column index="4" value="72"/><column index="5" value="69"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="invoices" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="71"/><column index="2" value="89"/><column index="3" value="145"/><column index="4" value="299"/><column index="5" value="146"/><column index="6" value="90"/><column index="7" value="112"/><column index="8" value="133"/><column index="9" value="45"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="media_types" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="97"/><column index="2" value="188"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="playlist_track" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="72"/><column index="2" value="58"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_sequence" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="96"/><column index="2" value="41"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="sqlite_stat1" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="96"/><column index="2" value="221"/><column index="3" value="82"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="top_employees" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="56"/><column index="2" value="131"/><column index="3" value="83"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tracks" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="1"/></sort><column_widths><column index="1" value="58"/><column index="2" value="343"/><column index="3" value="95"/><column index="4" value="97"/><column index="5" value="63"/><column index="6" value="300"/><column index="7" value="95"/><column index="8" value="74"/><column index="9" value="72"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tracks_audit_log" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="76"/><column index="2" value="71"/><column index="3" value="77"/><column index="4" value="73"/><column index="5" value="151"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Exercise 2 -Queries SQL">
+
+
+/*  Query 1  */
+
+SELECT artists.Name as &quot;Artist Name&quot;, 
+	albums.Title as &quot;Album Name&quot;
+	FROM albums
+	JOIN artists 
+	ON artists.ArtistId = albums.ArtistId
+	ORDER by artists.Name;
+
+ 
+/*  Query 2  */
+
+SELECT artists.Name as &quot;Artist Name&quot;, albums.Title as &quot;Album Name&quot;, 
+	count(albums.ArtistId) as &quot;No of Albums&quot;
+	FROM albums
+	JOIN artists 
+	ON artists.ArtistId = albums.ArtistId
+	GROUP by albums.ArtistId
+	HAVING count(albums.ArtistId) &gt;= 1
+	ORDER by albums.Title DESC;
+
+
+/*  Query 3  */
+
+SELECT Name as &quot;Artist Name&quot;
+	FROM artists 
+	WHERE ArtistId NOT in 
+	(SELECT albums.ArtistId FROM albums);
+
+
+/*  Query 4  */
+
+SELECT artists.Name as &quot;Artist Name&quot;, 
+	count(albums.ArtistId) as &quot;No of albums&quot;
+	FROM albums
+	JOIN artists
+	ON albums.ArtistId = artists.ArtistId
+	GROUP by artists.name
+	ORDER by count(albums.ArtistId) DESC, artists.Name ASC;
+
+
+/*  Query 5  */
+
+SELECT artists.Name as &quot;Artist Name&quot;, 
+	count(albums.ArtistId) as &quot;No of albums&quot;
+	FROM albums
+	JOIN artists
+	ON albums.ArtistId = artists.ArtistId
+	GROUP by artists.name
+	HAVING count(albums.ArtistId) &gt;= 10
+	ORDER by count(albums.ArtistId) DESC, artists.Name ASC;
+
+/*  Query 6  */
+
+SELECT artists.Name as &quot;Artist Name&quot;, 
+	count(albums.ArtistId) as &quot;No of albums&quot;
+	FROM albums
+	JOIN artists
+	ON albums.ArtistId = artists.ArtistId
+	GROUP by artists.name
+	ORDER by count(albums.ArtistId) DESC limit 3;
+
+
+/*  Query 7  */
+
+SELECT albums.Title as &quot;Album Title&quot;, 
+	tracks.Name as &quot;Track&quot; FROM tracks
+	JOIN albums 
+	ON albums.AlbumId = tracks.AlbumId
+	WHERE albums.ArtistId = 59
+	ORDER BY TrackID;
+
+/*  Query 8  */ #####################
+
+SELECT employees.LastName ||&quot; &quot;|| employees.FirstName as &quot;Employee Name&quot;, 
+	employees.EmployeeId as &quot;Employee ID&quot;, 
+	employees.Title as &quot;Employee Title&quot;, 
+	employees.ReportsTo as &quot;Manager ID&quot;, 
+	alt.FirstName ||&quot; &quot;|| alt.LastName as &quot;Manager Name&quot; , 
+	alt.Title as &quot;Manager Name&quot;
+	FROM employees 
+	INNER JOIN employees as alt 
+	on alt.EmployeeId = employees.ReportsTo;
+	
+
+
+/*  Query 9  */
+ 
+		/* top_employee view   */ 
+DROP VIEW if EXISTS TOP_EMPLOYEES;
+	CREATE VIEW TOP_EMPLOYEES as 
+
+		SELECT employees.EmployeeId as &quot;emp_id&quot;, 
+			employees.LastName ||&quot; &quot;|| employees.FirstName as &quot;emp_name&quot;, 
+			count(customers.CustomerId) as &quot;cust_count&quot;
+			FROM customers
+			JOIN employees ON employees.EmployeeId = customers.SupportRepId
+			GROUP by employees.EmployeeId
+
+		/*   */ 
+		
+	
+
+/* Question 10 */
+
+INSERT into media_types (name) VALUES (&quot;MP3&quot;);
+
+
+CREATE TRIGGER media_input_check
+    BEFORE INSERT ON media_types
+    BEGIN
+        SELECT CASE
+            WHEN NEW.Name = &quot;MP3&quot; THEN 
+				RAISE (ABORT, &quot;Dublicate entries not allowed!&quot;)
+        END;
+END;
+
+DROP TRIGGER media_input_check
+	
+
+/*  Query 11 */
+   /* Creating table */
+CREATE TABLE tracks_audit_log 
+( operation TEXT,
+  datetime TEXT,
+  username TEXT,
+  old_value TEXT,
+  new_value TEXT
+);
+
+  /* Creating trigger which keeps track of data manipulations in table track -&gt; Name*/
+	
+CREATE TRIGGER tracks_audit_insert
+AFTER INSERT ON tracks
+	BEGIN
+		INSERT INTO tracks_audit_log (operation, datetime, username, new_value)
+		VALUES (&quot;INSERT&quot;,datetime(),&quot;Admin&quot;,NEW.name);
+	END;
+    
+	
+##TEST ###
+
+INSERT INTO tracks (name, Composer,MediaTypeId, Milliseconds, Bytes, UnitPrice)
+VALUES (&quot;test&quot;, &quot;Zee&quot;,2, 2222, 211, 0.12)
+
+	
+
+CREATE TRIGGER tracks_audit_update
+AFTER UPDATE ON tracks
+	BEGIN
+		INSERT INTO tracks_audit_log (operation, datetime, username, old_value, new_value)
+		VALUES (&quot;UPDATE&quot;,datetime(),&quot;Admin&quot;,OLD.name,NEW.name);
+	END;
+	
+##TEST ##
+
+UPDATE tracks SET name = &quot;name_changed&quot; WHERE name = &quot;test&quot;
+
+
+
+CREATE TRIGGER tracks_audit_delete
+AFTER DELETE ON tracks
+	BEGIN
+		INSERT INTO tracks_audit_log (operation, datetime, username, old_value)
+		VALUES (&quot;DELETE&quot;,datetime(),&quot;Admin&quot;,OLD.name);
+	END;
+
+##TEST ##
+
+------------------------------------
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
